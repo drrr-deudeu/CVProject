@@ -149,23 +149,10 @@ font-face
     body{
         background-color: rgb(255, 169, 138);
     }
-    /* article
-    {
-        width: auto;
-    } */
 }
 
 @media all and (max-width: 1024px)
 {
-    /* nav
-    {
-        width: auto;
-        text-align: left;
-    }
-    nav a:hover
-    {
-        border-bottom: 0;
-    } */
     section
     {
         flex-direction: column;

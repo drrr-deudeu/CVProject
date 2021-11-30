@@ -1,28 +1,4 @@
-/* Définition des polices personnalisées */
 
-font-face
-{
-    font-family: 'BallparkWeiner';
-    src: url('polices/ballpark.eot');
-    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
-         url('polices/ballpark.woff') format('woff'),
-         url('polices/ballpark.ttf') format('truetype'),
-         url('polices/ballpark.svg#BallparkWeiner') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face
-{
-    font-family: 'Dayrom';
-    src: url('polices/dayrom.eot');
-    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
-         url('polices/dayrom.woff') format('woff'),
-         url('polices/dayrom.ttf') format('truetype'),
-         url('polices/dayrom.svg#Dayrom') format('svg');
-    font-weight: normal;
-    font-style: normal;
-} 
 
 /* Eléments principaux de la page */
 #logo img{ 
@@ -36,40 +12,6 @@ body
     color: #181818;
     width: auto;
 }
-
-
-@media all and (min-width: 1024px)
-{
-    section
-    {
-        flex-direction: row;
-    }
-
-    article
-    {
-        width: auto;
-    }
-}
-
-@media all and (max-width: 1024px)
-{
-    nav
-    {
-        width: auto;
-        text-align: left;
-    }
-    nav a:hover
-    {
-        border-bottom: 0;
-    }
-    section
-    {
-        flex-direction: column;
-    }
-
-
-}
-
 
 /* Header */
 
@@ -111,7 +53,6 @@ header h2
 }
 
 /* Navigation */
-
 nav ul
 {
     display: flex;
@@ -142,10 +83,7 @@ nav a:hover
     border-bottom: 1px solid #760001;
 }
 
-
 /* Corps */
-
-
 section
 {
     border: 1px solid darkgray;
@@ -174,3 +112,64 @@ article li, article p
     font-family: Dayrom, serif;
 }
 
+/* Définition des polices personnalisées */
+font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* En fonction des medias */
+@media all and (min-width: 1024px)
+{
+    section
+    {
+        flex-direction: row;
+    }
+
+    body{
+        background-color: rgb(255, 169, 138);
+    }
+    /* article
+    {
+        width: auto;
+    } */
+}
+
+@media all and (max-width: 1024px)
+{
+    /* nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    nav a:hover
+    {
+        border-bottom: 0;
+    } */
+    section
+    {
+        flex-direction: column;
+    }
+
+
+}

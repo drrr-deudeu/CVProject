@@ -113,7 +113,7 @@ article li, article p
 }
 
 /* Définition des polices personnalisées */
-font-face
+@font-face
 {
     font-family: 'BallparkWeiner';
     src: url('polices/ballpark.eot');
